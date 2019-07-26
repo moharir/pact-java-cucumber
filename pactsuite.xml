@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Pact Test Suite">
+	<test name="Pact test" preserve-order="true">
+		<classes>
+			<class name="cigniti.runner.PactRunner" />
+		</classes>
+	</test>
+</suite>
