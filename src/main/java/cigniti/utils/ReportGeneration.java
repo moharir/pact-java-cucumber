@@ -22,14 +22,13 @@ public class ReportGeneration {
 		}
 
 		String buildNumber = "01";
-		String projectName = "Nirwana";
+		String projectName = "PACT Automation";
 
 		Configuration configuration = new Configuration(reportOutputDirectory, projectName);
 		configuration.addPresentationModes(PresentationMode.RUN_WITH_JENKINS);
 		configuration.setBuildNumber(buildNumber);
 		configuration.addClassifications("Platform", System.getProperty("os.name"));
 		configuration.addClassifications("Platform", System.getProperty("user.name"));
-		configuration.addClassifications("Browser", "Chrome");
 		configuration.addClassifications("Branch", "Demo/1.0");
 
 		ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
